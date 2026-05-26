@@ -53,31 +53,6 @@ Endpoint	Method	Description
 
 /api/v1/history	GET	Retrieve password history
 
-Example API Request
-Analyze Password
-Request
-POST /api/v1/analyze
-{
-  "password": "Quantum@Shield2048!"
-}
-Response
-{
-  "success": true,
-  "message": "Password analyzed successfully",
-  "data": {
-    "strength": "Very Strong",
-    "entropy": 112.4
-  }
-}
-Running Tests
-
-Run all tests:
-
-pytest -v
-
-Run specific test:
-
-pytest tests/test_api.py
 Security Features
 bcrypt password hashing
 Password reuse prevention
