@@ -42,11 +42,17 @@ Password reuse prevention
 
 API Endpoints
 Endpoint	Method	Description
+
 /api/v1/health	GET	API health check
+
 /api/v1/analyze	POST	Analyze password
+
 /api/v1/generate-password	GET	Generate secure password
+
 /api/v1/verify-password	POST	Verify password
+
 /api/v1/history	GET	Retrieve password history
+
 Example API Request
 Analyze Password
 Request
