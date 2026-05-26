@@ -1,0 +1,396 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+
+    background: #0f172a;
+
+    color: #ffffff;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Card Design */
+.card {
+    background: #1e293b;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+.card h1 {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    font-size: 32px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #94a3b8;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+
+    gap: 10px;
+}
+
+/* Password Input */
+#passwordInput {
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background: #334155;
+
+    color: white;
+}
+
+/* Toggle Button */
+#togglePassword {
+    padding: 14px 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#togglePassword:hover {
+    background: #1d4ed8;
+}
+
+/* Strength Meter Container */
+.strength-container {
+    width: 100%;
+
+    height: 12px;
+
+    background: #334155;
+
+    border-radius: 10px;
+
+    margin-top: 25px;
+
+    overflow: hidden;
+}
+
+/* Strength Meter Bar */
+#strengthBar {
+    height: 100%;
+
+    width: 0%;
+
+    background: red;
+
+    transition: all 0.3s ease;
+}
+
+/* Strength Text */
+#strengthText {
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+/* Feedback Container */
+.feedback-container {
+    margin-top: 25px;
+}
+
+/* Feedback List */
+#feedbackList {
+    list-style: none;
+}
+
+/* Feedback Items */
+#feedbackList li {
+    background: #334155;
+
+    margin-bottom: 10px;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+/* Analyze Button */
+#analyzeBtn {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #16a34a;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#analyzeBtn:hover {
+    background: #15803d;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .card {
+        padding: 25px;
+    }
+
+    .card h1 {
+        font-size: 24px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    #togglePassword {
+        width: 100%;
+    }
+}
+
+/* Entropy Container */
+.entropy-container {
+
+    margin-top: 20px;
+
+    background: #334155;
+
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+.entropy-container p {
+
+    margin-bottom: 10px;
+
+    color: #e2e8f0;
+}
+
+/* Generator Container */
+.generator-container {
+
+    margin-top: 40px;
+
+    background: #334155;
+
+    padding: 20px;
+
+    border-radius: 12px;
+}
+
+.generator-container h2 {
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+/* Generator Controls */
+.generator-controls {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+/* Length Input */
+#passwordLength {
+
+    width: 100px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #1e293b;
+
+    color: white;
+}
+
+/* Generate Button */
+#generateBtn {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#generateBtn:hover {
+
+    background: #6d28d9;
+}
+
+/* Generated Password Box */
+.generated-password-box {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+/* Generated Password Input */
+#generatedPassword {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #1e293b;
+
+    color: white;
+}
+
+/* Copy Button */
+#copyBtn {
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#copyBtn:hover {
+
+    background: #1d4ed8;
+}
+
+/* Critical Security Warning */
+.critical-warning {
+
+    background: #7f1d1d !important;
+
+    color: #ffffff;
+
+    border-left: 5px solid #ef4444;
+}
+
+/* Status Indicator */
+#statusIndicator {
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    color: #94a3b8;
+}
+
+/* Smooth Meter Animation */
+#strengthBar {
+
+    transition:
+        width 0.4s ease,
+        background 0.4s ease;
+}
+
+/* Smooth Feedback Animation */
+#feedbackList li {
+
+    animation: fadeIn 0.3s ease;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Password Strength Analyzer</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <div class="card">
+
+            <h1>Password Strength Analyzer</h1>
+
+            <p class="subtitle">
+                Analyze password security in real time
+            </p>
+
+            <!-- Password Input Section -->
+            <div class="input-group">
+
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="Enter your password"
+                    autocomplete="off"
+                >
+
+                <button id="togglePassword">
+                    Show
+                </button>
+
+            </div>
+
+            <!-- Strength Meter -->
+            <div class="strength-container">
+
+                <div id="strengthBar"></div>
+
+            </div>
+
+            <!-- Strength Text -->
+            <div id="strengthText">
+                Password Strength
+            </div>
+
+            <!-- Feedback Area -->
+            <div class="feedback-container">
+
+                <ul id="feedbackList"></ul>
+
+            </div>
+
+            <!-- Entropy Display -->
+            <div class="entropy-container">
+
+                <p>
+                    Entropy:
+                    <span id="entropyValue">0</span> bits
+                </p>
+
+                <p>
+                    Estimated Crack Time:
+                    <span id="crackTime">
+                        Instantly
+                    </span>
+                </p>
+
+            </div>
+            
+            <div id="strengthText"></div>
+
+            <!-- Live Status Indicator -->
+            <div id="statusIndicator">
+                Waiting for input...
+            </div>
+
+            <!-- Analyze Button -->
+            <button id="analyzeBtn">
+                Analyze Password
+            </button>
+
+            <!-- Password Generator Section -->
+            <div class="generator-container">
+
+                <h2>Secure Password Generator</h2>
+
+                <div class="generator-controls">
+
+                    <input
+                        type="number"
+                        id="passwordLength"
+                        min="8"
+                        max="64"
+                        value="16"
+                    >
+
+                    <button id="generateBtn">
+                        Generate Password
+                    </button>
+
+                </div>
+
+                <div class="generated-password-box">
+
+                    <input
+                        type="text"
+                        id="generatedPassword"
+                        readonly
+                    >
+
+                    <button id="copyBtn">
+                        Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>
+
+
