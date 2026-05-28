@@ -143,30 +143,6 @@ Password_Strength_Analyser/
 
 ---
 
-# 📸 Application Preview
-
-<div align="center">
-
-## 🔐 Password Analysis Dashboard
-
-<img src="./screenshots/dashboard.png" width="100%" />
-
----
-
-## 📊 Password Strength Evaluation
-
-<img src="./screenshots/analysis.png" width="100%" />
-
----
-
-## 🛡️ Security Validation
-
-<img src="./screenshots/security.png" width="100%" />
-
-</div>
-
----
-
 # ⚙️ Installation & Setup
 
 ## 📥 Clone The Repository
